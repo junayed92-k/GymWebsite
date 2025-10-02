@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym - Transform Your Body, Transform Your Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-green-500">FitZone</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-white hover:text-green-500 px-3 py-2">Home</a>
+                        <a href="#programs" class="nav-link text-white hover:text-green-500 px-3 py-2">Programs</a>
+                        <a href="#services" class="nav-link text-white hover:text-green-500 px-3 py-2">Services</a>
+                        <a href="#trainers" class="nav-link text-white hover:text-green-500 px-3 py-2">Trainers</a>
+                        <a href="#pricing" class="nav-link text-white hover:text-green-500 px-3 py-2">Pricing</a>
+                        <a href="#contact" class="nav-link text-white hover:text-green-500 px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-green-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden fixed top-16 left-0 w-full h-screen bg-black/95 backdrop-blur-sm">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Home</a>
+                <a href="#programs" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Programs</a>
+                <a href="#services" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Services</a>
+                <a href="#trainers" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Trainers</a>
+                <a href="#pricing" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Pricing</a>
+                <a href="#contact" class="block px-3 py-2 text-white hover:text-green-500 mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">
+                Transform Your Body,<br>
+                <span class="text-green-500">Transform Your Life</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 animate-fadeInUp" style="animation-delay: 0.2s;">
+                Join thousands who've achieved their fitness goals with our world-class facilities and expert trainers
+            </p>
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 animate-pulse-custom">
+                JOIN NOW - Start Your Journey
+            </button>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 px-4 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-900 rounded-lg p-8 text-center border border-gray-700">
+                    <div class="text-6xl mb-4">💪</div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-500">Strength Training</h3>
+                    <p class="text-gray-300 mb-6">Build muscle and increase power with our comprehensive strength programs</p>
+                    <ul class="text-left text-gray-400 space-y-2">
+                        <li>• Free weights & machines</li>
+                        <li>• Progressive overload programs</li>
+                        <li>• Form correction & technique</li>
+                    </ul>
+                </div>
+                
+                <div class="card-hover bg-gray-900 rounded-lg p-8 text-center border border-gray-700">
+                    <div class="text-6xl mb-4">❤️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-500">Cardio</h3>
+                    <p class="text-gray-300 mb-6">Improve endurance and burn calories with high-energy cardio sessions</p>
+                    <ul class="text-left text-gray-400 space-y-2">
+                        <li>• HIIT workouts</li>
+                        <li>• Treadmills & bikes</li>
+                        <li>• Group cardio classes</li>
+                    </ul>
+                </div>
+                
+                <div class="card-hover bg-gray-900 rounded-lg p-8 text-center border border-gray-700">
+                    <div class="text-6xl mb-4">🧘</div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-500">Yoga</h3>
+                    <p class="text-gray-300 mb-6">Find balance and flexibility through mindful movement and breathing</p>
+                    <ul class="text-left text-gray-400 space-y-2">
+                        <li>• Hatha & Vinyasa styles</li>
+                        <li>• Beginner to advanced</li>
+                        <li>• Meditation sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">🏋️</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Personal Training</h3>
+                    <p class="text-gray-300">One-on-one sessions with certified trainers tailored to your specific goals and fitness level.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">👥</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Group Classes</h3>
+                    <p class="text-gray-300">High-energy group workouts including Zumba, Spin, CrossFit, and Boot Camp sessions.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">🥗</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Nutrition Coaching</h3>
+                    <p class="text-gray-300">Personalized meal plans and nutrition guidance to complement your fitness journey.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">💆</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Recovery Services</h3>
+                    <p class="text-gray-300">Massage therapy, sauna, steam room, and recovery treatments for optimal performance.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">📊</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Body Composition Analysis</h3>
+                    <p class="text-gray-300">Advanced body scanning and fitness assessments to track your progress accurately.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">🏊</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Aquatic Programs</h3>
+                    <p class="text-gray-300">Swimming lessons, water aerobics, and aquatic therapy in our heated indoor pool.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">🧘</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Mind-Body Classes</h3>
+                    <p class="text-gray-300">Yoga, Pilates, meditation, and mindfulness sessions for holistic wellness.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">👶</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Kids Programs</h3>
+                    <p class="text-gray-300">Fun fitness activities and sports programs designed specifically for children and teens.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="text-5xl mb-4 text-green-500">🏆</div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500">Athletic Performance</h3>
+                    <p class="text-gray-300">Sport-specific training and performance enhancement for competitive athletes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="py-20 px-4 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Meet Our Trainers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-green-500">
+                       <img  src="summs.jpg" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                    <p class="text-green-500 mb-4">Strength & Conditioning</p>
+                    <p class="text-gray-400">10+ years experience in powerlifting and bodybuilding. Certified personal trainer specializing in muscle building.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-green-500">
+                       <img src="dukkur.jpg" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sarah Williams</h3>
+                    <p class="text-green-500 mb-4">Yoga & Wellness</p>
+                    <p class="text-gray-400">Certified yoga instructor with expertise in mindfulness and flexibility training. 8 years of teaching experience.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 text-center border border-gray-700">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-green-500">
+                        <img src="pukkur.jpg" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">David Chen</h3>
+                    <p class="text-green-500 mb-4">HIIT & Cardio</p>
+                    <p class="text-gray-400">Former athlete turned fitness coach. Specializes in high-intensity training and weight loss programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Choose Your Plan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-900 rounded-lg p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-6 text-green-500">$29<span class="text-lg text-gray-400">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Gym access</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Basic equipment</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Locker room access</li>
+                    </ul>
+                    <button class="w-full bg-gray-700 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                        Choose Basic
+                    </button>
+                </div>
+                
+                <div class="card-hover bg-gray-900 rounded-lg p-8 border-2 border-green-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm">
+                        Most Popular
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <div class="text-4xl font-bold mb-6 text-green-500">$49<span class="text-lg text-gray-400">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Everything in Basic</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Group classes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Personal training session</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Nutrition consultation</li>
+                    </ul>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                        Choose Standard
+                    </button>
+                </div>
+                
+                <div class="card-hover bg-gray-900 rounded-lg p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-6 text-green-500">$79<span class="text-lg text-gray-400">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Everything in Standard</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Unlimited personal training</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Meal planning</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 24/7 gym access</li>
+                    </ul>
+                    <button class="w-full bg-gray-700 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                        Choose Premium
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">What Our Members Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-xl">👩</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Emma Thompson</h4>
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"FitZone transformed my life! Lost 30 pounds and gained so much confidence. The trainers are amazing!"</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-xl">👨</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">James Rodriguez</h4>
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Best gym in town! Great equipment, clean facilities, and the community is so supportive."</p>
+                </div>
+                
+                <div class="card-hover bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-xl">👩</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Lisa Park</h4>
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The yoga classes here are incredible. Sarah is an amazing instructor who really cares about her students."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 px-4 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Our Facility</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🏋️‍♂️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🏃‍♀️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🧘‍♀️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">💪</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🏊‍♂️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🚴‍♀️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🤸‍♂️</div>
+                <div class="card-hover bg-gray-700 rounded-lg h-48 flex items-center justify-center text-4xl">🏆</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fadeInUp">Get In Touch</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="animate-slideInLeft">
+                    <h3 class="text-2xl font-bold mb-6 text-green-500">Contact Information</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">📞</span>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">📧</span>
+                            <span>info@fitzonegym.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">📍</span>
+                            <span>123 Fitness Street, Healthy City, HC 12345</span>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-xl font-bold mb-4 text-green-500">Hours</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <div class="flex justify-between">
+                            <span>Monday - Friday:</span>
+                            <span>5:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Saturday:</span>
+                            <span>6:00 AM - 10:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Sunday:</span>
+                            <span>7:00 AM - 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-slideInRight">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-green-500 mb-4">FitZone</h3>
+            <p class="text-gray-400 mb-6">Transform Your Body, Transform Your Life</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors">Twitter</a>
+            </div>
+            <p class="text-gray-500">&copy; 2024 FitZone Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="javascript/index.js"></script>
+
+    <script src="javascript/secon.js"></script>
+
+
+</body>
+</html>
