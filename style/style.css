@@ -63,7 +63,7 @@
         
         .hero-bg {
             background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(16,185,129,0.3)), 
-                        url('/pukkur.jpg');
+                        url('/workOut.webp');
             background-size: cover;
             background-position: center;
         }
